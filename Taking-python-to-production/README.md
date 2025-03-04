@@ -30,3 +30,8 @@ sed -i 's/\(^plugins=([^)]*\)/\1 python pip pyenv virtualenv web-search zsh-auto
  
 # set the ZSH_THEME to "bira"
 sed -i 's/_THEME=\".*\"/_THEME=\"bira\"/g' "$HOME/.zshrc"
+
+
+
+
+## 2. Principles of clean code (PEP 8)
