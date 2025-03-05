@@ -35,3 +35,25 @@ sed -i 's/_THEME=\".*\"/_THEME=\"bira\"/g' "$HOME/.zshrc"
 
 
 ## 2. Principles of clean code (PEP 8)
+
+https://peps.python.org/pep-0008/
+
+Principles of clean code. 
+
+- Code based in readability. 
+    - Don't use comments.
+- Functions based in inputs.
+    - Don't relay in global states.
+
+
+Resources:
+    - testdriven.io
+
+
+Code Quality:
+    - Does it work?
+    - Can be understood?
+    - Is it safe?
+    - Do we even want this?
+        - More code more to maintain.
+    - Keep commits and PR small for review.
