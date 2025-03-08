@@ -57,3 +57,17 @@ Code Quality:
     - Do we even want this?
         - More code more to maintain.
     - Keep commits and PR small for review.
+
+.vscode style format
+- sttings.json - black extension in vscode.
+- Pylint
+    - Improves readability and cleaner code. 
+- Mypy 
+    - Static Python -
+        settings.json
+        "python.Linting.Enabled:"
+
+- typing library ()
+    - Improves readibility of elements
+    - Tuples, Classes, 
+ 
