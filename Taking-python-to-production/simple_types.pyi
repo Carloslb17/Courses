@@ -1,0 +1,3 @@
+class Duck:
+    def quack(self) -> None:
+        ...

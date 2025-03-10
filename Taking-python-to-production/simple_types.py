@@ -90,7 +90,7 @@ point_2d.y
 class Student(TypedDict):
     name: str
     age: int 
-    friends: List["Student"] # Double quoting the class we get the autocompletition. 
+    friends: List["Student"] # Double quoting the class we get the autocompletion. 
     
     
 student: Student = {
@@ -175,3 +175,23 @@ student_1 : Student[Animal, int] = Student(
             friends_1=[Animal()],
             friends_2=[1],
 )
+
+
+# Improve autocompletion
+# How to give improve autocompletion to functions already defined without refactor them.
+# We can write our stub files. 
+class Duck:
+    def __init__(self):
+        ...
+        
+    def __getattribute__(self, attr: int):
+        if attr == "quack":
+            return lambda: print("quack")
+        elif attr == "swim":
+            return lambda: print("splash")
+        else:
+            raise AttributeError
+        
+        
+        
+duck = Duck()
